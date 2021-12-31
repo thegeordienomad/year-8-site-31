@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html,body{
+    overflow:auto;
+    }
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(238, 238, 238);
+}
+
+body {
+    width: 100vh;
+    height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+    background-image:linear-gradient(to right,#01051dc4, #505c63b2), url(/media/pexels-mart-production-8471893.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(245, 245, 245);
+    font-size: 10px;
+}
+
+/* Navbar */
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 8%;
+}
+
+.students-list-items {
+    display: none;
+}
+
+.navbar-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Navbar dropdown  */
+
+.dropdown {
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(105, 105, 105, 0.596);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffffff1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(121, 121, 121);
+    color:#eee;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Header */
+
+.header-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 60%;
+    transform: translate(0, -50%);
+    width: 100vw;
+}
+
+.page-title {
+    font-size: 8rem;
+    font-weight: 1000;
+    line-height: 7.3rem;
+}
+
+.contact-button {
+    margin:3rem;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* button {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      border: none;
+      color: rgba(255,255,255,0.5);
+      font-size: 20px;
+      border-radius: 4px;
+      box-shadow: inset 0px 3px 5px rgba(255,255,255,0.5), 0px 0px 10px rgba(0,0,0,0.15);
+      background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, rgba(255,255,255,0) 9%, rgba(255,255,255,.5) 10%, rgba(255,255,255,0) 17%, rgba(255,255,255,.5) 19%, rgba(255,255,255,0) 21%);
+      background-size: 150%;
+      background-position: right;
+      transition: .5s;
+  }
+  
+  button:hover {
+      background-position: left;
+      color: white;
+      box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+  }
+  
+  button:focus {
+      outline: none;
+  } */
+
+
+  /* contact button */
+
+  .section-book {
+      background: rgba(37, 37, 54, 0.486);
+    width: 100vw;
+    position: absolute;
+    padding: 15rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+}
+
+.section-book {
+    padding: 8rem 0;
+    color: #ffffffea;
+}
+
+.heading-secondary {
+    margin-bottom: 4rem;
+}
+
+.contact-form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.email-subject-box {
+    margin-bottom: 4rem;
+}
+
+.section-book label {
+    margin-bottom: 3rem;
+}
+
+.contact-form-container input, textarea {
+    color: white;
+    font-size: 1.4rem;
+    border-width: 0 0 2px 0;
+    border-color: #dce7e5;
+    background: transparent;
+    width: 20rem;
+    margin-right: 3rem;
+}
+
+.contact-form-container input::selection {
+    border-color: rgb(202, 182, 0);
+}
+
+.blog-image-medium {
+    width: 50rem;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/components/buttons.css">
+    <link rel="stylesheet" href="/components/features.css">
+    <link rel="stylesheet" href="/structure/blog-pages.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <navbar class="navbar-container">
+        <ul class="navbar-list" id="navbar-list">
+            <li class="navbar-button"><a href="/index.html"> Home </a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Students
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="/student-pages/zahar-k.html">Zahar K</a></li>
+                    <li><a href="/student-pages/zahar-b.html">Zahar B</a></li>
+                    <li><a href="/student-pages/sasha-s.html">Sasha Shilyuk</a></li>
+                    <li><a href="/student-pages/cheburek.html">Sash Milehin</a></li>
+                    <li><a href="/student-pages/pash-b.html">Pash B</a></li>
+                    <li><a href="/student-pages/sandra.html">Sandra</a></li>
+                    <li><a href="/student-pages/carolina.html">Carolina</a></li>
+                    <li><a href="/student-pages/alex.html">Alex</a></li>
+                    <li><a href="/student-pages/sozanskaya.html">Sozanskaya</a></li>
+                    <li><a href="/student-pages/nastia.html">Nastia</a></li>
+                    <li><a href="/student-pages/pash-s.html">Pash S</a></li>
+                </div>
+              </div>
+            </div>
+            <li class="navbar-button"><a href="/class-pages/news.html"> News </a></li>
+            <li class="navbar-button"><a href="/class-pages/contact.html"> Contact</a>  </li>
+        </ul>
+    </navbar>
+
+    <button class="hamburger icon-btn" id="hamburger">
+        <img class="icon-img" id="icon-img" src="/media/bgr1.png">
+        <img class="icon-img-2" id="icon-img-2" src="/media/whit-x-2.png">
+    </button>
+
+    <section class="section-book">
+        <a name="contact-anchor"></a> 
+        <h2 class="heading-secondary u-margin-bottom-small"><a name="section-book"></a>Get in Touch</h2>
+        <form action="https://formspree.io/f/xdoyjjqg" method="POST" class="contact-form-container">
+            <div class="email-subject-box">
+                <label class="c-f-label">
+                    Email
+                    <input placeholder="johndoe@gmail.com" type="email" name="email" class="email"> 
+                </label>
+                <label class="c-f-label">
+                    Subject
+                    <input placeholder="Type here" type="text" name="subject" class="subject">
+                </label>
+            </div>
+            <span class="c-f-label">Message</span>
+            <label id="label-message">
+                
+                <textarea placeholder="Type message here..." name="message" class="message"></textarea>
+            </label>
+            <div class="status">
+
+            </div>
+            <button type="submit" class="contact-btn button-1"> Send </button>
+        </form>
+    </section>
+
+    <script src="../app.js"></script>
+    
+</body>
+</html>

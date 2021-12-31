@@ -1,0 +1,236 @@
+
+/* .page-container-wrap {
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: 100vh;
+} */
+
+.page-container {
+    position:absolute;
+    width: auto;
+    padding-bottom: 4.5rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: rgba(5, 0, 17, 0.63);
+}
+
+.page-container-banner {
+    margin-top: 7rem;
+}
+
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-name {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.student-intro {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        padding-left: 12rem;
+        padding-right: 12rem;
+}
+
+
+.blog-post-container {
+    margin-top: 5rem;
+    padding: 0 12rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* * {
+        font-size: 15px;
+    } */
+
+    .blog-post-container, .student-intro {
+        color: deeppink;
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+
+    /* * {
+        font-size: 14.5px;
+    } */
+
+    .navbar-logo {
+       display: none; 
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .email-subject-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* * {
+        font-size: 14px;
+    } */
+
+    body {
+        overflow: hidden;
+        margin:0;
+        padding:0;
+        width: 100vw;
+    }
+
+    .page-title {
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+
+    .blog-post-container, .student-intro {
+        color: greenyellow;
+        padding: 0 2rem;
+        margin:0;
+    }
+
+    .student-intro {
+        color: greenyellow;
+        padding: 0 2rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    .page-container {
+        margin:0;
+        padding: 0;
+    }
+
+    .navbar-list {
+
+        display: none;
+
+        position: fixed;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        bottom: 16rem;
+        top: 0;
+        width: 100vw;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient(#05001def, #191f22f3);
+        margin-left: 0;   
+        align-items: center;
+        overflow: visible;
+    }
+
+    .navbar-list.show {
+        display: flex;
+    }
+
+    .navbar-button a:hover {
+        transform: scale(1.2);
+        color: rgb(189, 155, 3);
+        box-shadow: rgba(29, 29, 29, 0.205);
+    }
+
+    .dropdown-content {
+        font-size: .9rem;
+        z-index: 6;
+    }
+
+
+    /* Contact page */
+
+    .box-2 {
+        padding-top: 3rem;
+    }
+
+    .section-book {
+        font-size: 1rem;
+        padding-top: 8rem;
+    }
+
+    .c-f-label input {
+        margin-bottom: 1rem;
+    }
+
+    .contact-form-container {
+        margin: 3rem;
+    }
+
+    .heading-secondary {
+        margin-bottom: 0;
+        font-size: 3rem;
+    }
+
+    .email-subject-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2;
+    }
+
+    .student-name {
+        font-size: 2.5rem
+    }
+
+    .student-name-2 {
+        font-size: 2rem;
+    }
+
+    .news-buffer {
+        margin-top:2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Icons */
+
+     #icon-img {
+        width: 2.9rem;
+        display: flex;
+    }
+    
+    #icon-img.off {
+        display: none;
+    }
+    
+    #icon-img-2 {
+        display: none;
+    }
+    
+    #icon-img-2.show {
+        display: flex;
+        width: 2.9rem;
+        background: none;
+    } 
+}
+
+@media screen and (max-width: 42rem) {
+
+    .page-title {
+        font-size: 2.8rem;
+    }
+
+    .email-subject-box {
+        margin-bottom: 0;
+        padding-left: 3rem;
+    }
+
+    #label-message {
+        padding-left: 3rem;
+    }
+
+}
